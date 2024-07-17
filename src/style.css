@@ -4,33 +4,59 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Ropest';
+  src: url('./Ropest.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --garnet: hsl(0, 45%, 31%);
+  --oxford-blue:hsl(213, 96%, 11%);
+  --celestial-blue: hsl(208, 68%, 59%);
+  --cream: #f8ffe5;
+  --moonstone: hsl(189 43% 56%);
+  --title-font: 'Ropest', 'Courier New', Courier, monospace;
+  --page-font: monospace, sans-serif;
+}
+
 body {
   height: 100vh;
   display: grid;
-  grid-template-rows: 3rem 1fr;
+  grid-template-columns: 5rem 1fr;
 }
 
 header {
   display: grid;
-  justify-items: stretch;
+  justify-items: center;
   align-items: stretch;
-  background: blueviolet;
+  background: var(--garnet);
+  z-index: 1;
+  transition: 300ms;
 }
 
 nav {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 2rem);
   justify-items: center;
   align-items: start;
-  gap: 0.1rem;
-  background: blue;
+  gap: 1rem;
+  background: var(--garnet);
+  max-width: 100%;
+}
+
+header:hover {
+  width: 15rem;
+  transform: scaleX(2);
 }
 
 button {
   height: 3rem;
   width: 5rem;
   border: none;
-  background: white;
+  background: var(--garnet);
+  color: var(--cream);
 }
 
 button:hover {
@@ -38,7 +64,7 @@ button:hover {
 }
 
 button:active {
-  background: hsl(0, 0%, 90%);
+  background: hsl(208, 68%, 39%);
 }
 
 #content {
@@ -46,25 +72,44 @@ button:active {
   grid-template-rows: 10rem 1fr 5rem;
   justify-items: stretch;
   align-items: stretch;
-
+  background: var(--celestial-blue);
 }
 
-.header {
+.banner {
   display: grid;
-  background: red;
+  background: var(--oxford-blue);
+  color: var(--cream);
 }
 
 .title {
   align-self: center;
   justify-self: center;
-  font-weight: 700;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 5rem;
+  font-family: var(--title-font);
 }
 
-.main {
-  background: green;
+.container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: var(--celestial-blue);
+}
+
+.restaurant {
+  height: 40vh;
+  width: auto;
+  clip-path: ellipse();
+}
+
+.footcontainer {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: var(--oxford-blue);
 }
 
 .footer {
-  background: yellow;
+  color: var(--cream);
+  font-family: var(--page-font);
+  font-style: italic;
 }
