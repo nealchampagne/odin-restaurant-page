@@ -15,7 +15,7 @@ const homeLoad = () => {
   sidebar.classList.add('sidebar');
   banner.classList.add('banner');
   title.classList.add('title');
-  title.textContent = `Blobfish`;
+  title.textContent = `Bob's Blobfish Bistro`;
   container.classList.add('container');
   main.classList.add('main');
   restaurantImage.classList.add('restaurant');
