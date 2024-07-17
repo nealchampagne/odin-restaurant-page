@@ -15,7 +15,7 @@
   --garnet: hsl(0, 45%, 31%);
   --oxford-blue:hsl(213, 96%, 11%);
   --celestial-blue: hsl(208, 68%, 59%);
-  --cream: #f8ffe5;
+  --cream: hsl(76, 100%, 95%);
   --moonstone: hsl(189 43% 56%);
   --title-font: 'Ropest', 'Courier New', Courier, monospace;
   --page-font: monospace, sans-serif;
@@ -24,47 +24,46 @@
 body {
   height: 100vh;
   display: grid;
-  grid-template-columns: 5rem 1fr;
+  grid-template-columns: 10rem 1fr;
 }
 
-header {
+.sidebar {
   display: grid;
   justify-items: center;
   align-items: stretch;
   background: var(--garnet);
+  padding-top: 2rem;
   z-index: 1;
   transition: 300ms;
 }
 
 nav {
   display: grid;
-  grid-template-rows: repeat(3, 2rem);
+  grid-template-rows: repeat(3, 3rem);
   justify-items: center;
   align-items: start;
-  gap: 1rem;
   background: var(--garnet);
   max-width: 100%;
 }
 
-header:hover {
-  width: 15rem;
-  transform: scaleX(2);
-}
-
 button {
   height: 3rem;
-  width: 5rem;
+  width: 10rem;
   border: none;
   background: var(--garnet);
+  font-size: 1rem;
+  font-family: var(--page-font);
   color: var(--cream);
+  transition: 200ms;
 }
 
 button:hover {
   cursor: pointer;
+  color: var(--oxford-blue);
 }
 
 button:active {
-  background: hsl(208, 68%, 39%);
+  background: hsl(0, 45%, 21%);
 }
 
 #content {
@@ -98,7 +97,8 @@ button:active {
 .restaurant {
   height: 40vh;
   width: auto;
-  clip-path: ellipse();
+  clip-path: polygon(10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0 80%, 0 20%);
+  
 }
 
 .footcontainer {
