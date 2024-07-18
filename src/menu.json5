@@ -1,0 +1,27 @@
+{
+  item1: {
+    name: 'food1',
+    description: 'good food1',
+    price: 'money1',
+    image: 'url',
+  },
+  item2: {
+    name: 'food2',
+    description: 'good food2',
+    price: 'money2',
+    image: 'url',
+  },
+  item3: {
+    name: 'food3',
+    description: 'good food3',
+    price: 'money3',
+    image: 'url',
+  },
+  item4: {
+    name: 'food4',
+    description: 'good food4',
+    price: 'money4',
+    image: 'url',
+  },
+}
+
