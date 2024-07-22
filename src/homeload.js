@@ -1,35 +1,39 @@
-import restaurant from './restaurant.jpeg';
+import restaurant from './images/restaurant.jpeg';
 
 const homeLoad = () => {
   const content = document.querySelector('#content');
-  const sidebar = document.querySelector('header');
-  const banner = document.createElement('div');
-  const container = document.createElement('div');
-  const main = document.createElement('div');
-  const footContainer = document.createElement('div');
-  const footer = document.createElement('div');
+  const homeContainer = document.createElement('div');
+  const home = document.createElement('div');
+  const hours = document.createElement('div');
   const title = document.createElement('div');
+  const monFri = document.createElement('div');
+  const satSun = document.createElement('div');
+  const address = document.createElement('div');
   const restaurantImage = new Image();
   restaurantImage.src = restaurant;
 
-  sidebar.classList.add('sidebar');
-  banner.classList.add('banner');
-  title.classList.add('title');
-  title.textContent = `Bob's Blobfish Bistro`;
-  container.classList.add('container');
-  main.classList.add('main');
+  homeContainer.classList.add('homecontainer');
+  home.classList.add('home');
+  hours.classList.add('hours');
+  title.classList.add('hourstitle');
+  monFri.classList.add('monfri');
+  satSun.classList.add('satsun');
+  address.classList.add('address');
   restaurantImage.classList.add('restaurant');
-  footContainer.classList.add('footcontainer');
-  footer.classList.add('footer');
-  footer.textContent = 'Est. 1961';
 
-  content.appendChild(banner);
-  banner.appendChild(title);
-  content.appendChild(container);
-  container.appendChild(main);
-  main.appendChild(restaurantImage);
-  content.appendChild(footContainer);
-  footContainer.appendChild(footer);
+  title.textContent = 'Hours'
+  monFri.textContent = 'Mon-Fri: 10am - 7pm'
+  satSun.textContent = 'Sat-Sun: 9am - 4pm'
+  address.textContent = '498 Bayside Dr, Portsville, ME 09310'
+
+  content.appendChild(homeContainer);
+  homeContainer.appendChild(home);
+  home.appendChild(restaurantImage);
+  home.appendChild(hours);
+  hours.appendChild(title);
+  hours.appendChild(monFri);
+  hours.appendChild(satSun);
+  home.appendChild(address);
 }
 
 export default homeLoad;

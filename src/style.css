@@ -25,7 +25,7 @@
   --cream: hsl(76, 100%, 95%);
   --robins-egg: hsl(187, 58%, 77%);
   --title-font: 'Ropest', 'Courier New', Courier, monospace;
-  --page-font: monospace, sans-serif;
+  --page-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -110,9 +110,42 @@ button {
 
 .homecontainer {
   display: grid;
-  align-items: center;
   justify-items: center;
+  align-items: center;
+  padding: 5rem;
   background: var(--celestial-blue);
+}
+
+.home {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 1fr 5rem 5rem;
+  gap: 2rem;
+}
+
+.hours {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 1rem;
+  color: var(--cream);
+  font-family: var(--page-font);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.hourstitle {
+  font-weight: 600;
+}
+
+.address {
+  margin-top: 4rem;
+  color: var(--cream);
+  font-family: var(--page-font);
+  font-weight: 600;
+  font-style: italic;
 }
 
 .restaurant {
