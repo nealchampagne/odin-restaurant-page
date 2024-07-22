@@ -120,18 +120,27 @@ button {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 1fr 5rem 5rem;
-  gap: 2rem;
+  grid-template-rows: 1fr 15rem;
+  gap: 5rem;
+}
+
+.infocontainer {
+  display: grid;
+  grid-template-rows: 8rem 5rem;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  border-radius: 0.25rem;
+  background: var(--robins-egg);
+  color: var(--oxford-blue);
+  font-family: var(--page-font);
 }
 
 .hours {
   display: grid;
   justify-items: center;
   align-items: center;
-  margin-top: 5rem;
   gap: 1rem;
-  color: var(--cream);
-  font-family: var(--page-font);
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -141,17 +150,23 @@ button {
 }
 
 .address {
-  margin-top: 4rem;
-  color: var(--cream);
-  font-family: var(--page-font);
+  margin-top: 1rem;
   font-weight: 600;
   font-style: italic;
 }
 
+.imagecontainer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem;
+  background: var(--robins-egg);
+}
+
 .restaurant {
-  height: 40vh;
+  height: 38vh;
   width: auto;
-  clip-path: polygon(10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0 80%, 0 20%);
+  clip-path: polygon(5% 0, 95% 0, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0 90%, 0 10%);
 }
 
 .menucontainer {
@@ -211,6 +226,38 @@ button {
   height: 10rem;
   width: 10rem;
   object-fit: contain;
+}
+
+.aboutcontainer {
+  overflow-y: scroll;
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  padding: 5rem;
+}
+
+.about {
+  display: grid;
+  grid-template-rows: 3rem 1fr 3rem 1fr;
+  justify-items: center;
+  align-items: start;
+  gap: 2rem;
+  width: 55rem;
+  padding: 5rem;
+  border-radius: 0.25rem;
+  font-family: var(--page-font);
+  background: var(--robins-egg);
+  color: var(--oxford-blue);
+}
+
+.originheading, .philheading {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.origin, .philosophy {
+  line-height: 1.5rem;
 }
 
 .footcontainer {
