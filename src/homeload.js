@@ -2,18 +2,22 @@ import restaurant from './images/restaurant.jpeg';
 
 const homeLoad = () => {
   const content = document.querySelector('#content');
-  const homeContainer = document.createElement('div');
+  const container = document.createElement('div');
   const home = document.createElement('div');
+  const info = document.createElement('div');
   const hours = document.createElement('div');
   const title = document.createElement('div');
   const monFri = document.createElement('div');
   const satSun = document.createElement('div');
   const address = document.createElement('div');
+  const imageContainer = document.createElement('div');
   const restaurantImage = new Image();
   restaurantImage.src = restaurant;
 
-  homeContainer.classList.add('homecontainer');
+  container.classList.add('homecontainer');
   home.classList.add('home');
+  imageContainer.classList.add('imagecontainer');
+  info.classList.add('infocontainer');
   hours.classList.add('hours');
   title.classList.add('hourstitle');
   monFri.classList.add('monfri');
@@ -26,14 +30,16 @@ const homeLoad = () => {
   satSun.textContent = 'Sat-Sun: 9am - 4pm'
   address.textContent = '498 Bayside Dr, Portsville, ME 09310'
 
-  content.appendChild(homeContainer);
-  homeContainer.appendChild(home);
-  home.appendChild(restaurantImage);
-  home.appendChild(hours);
+  content.appendChild(container);
+  container.appendChild(home);
+  home.appendChild(imageContainer);
+  imageContainer.appendChild(restaurantImage);
+  home.appendChild(info);
+  info.appendChild(hours);
   hours.appendChild(title);
   hours.appendChild(monFri);
   hours.appendChild(satSun);
-  home.appendChild(address);
+  info.appendChild(address);
 }
 
 export default homeLoad;
