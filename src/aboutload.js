@@ -17,7 +17,7 @@ const aboutLoad = () => {
   originHeading.textContent = 'Our Origin Story'
   origin.innerHTML = `Nestled on the rugged shores of the North Atlantic, Blobfish 
   Bistro emerged from the depths like a hidden treasure. Founded in 1961 by Captain 
-  Magnus "Salty” O’Sullivan, a grizzled seafarer with a penchant for adventure, 
+  Magnus “Salty” O’Sullivan, a grizzled seafarer with a penchant for adventure, 
   our humble eatery began as a dockside cottage. Salty, with a twinkle in his eye 
   and salt spray in his beard, envisioned a place where the ocean’s bounty could 
   be celebrated—a sanctuary for seafood enthusiasts and curious souls alike.<br><br>
@@ -41,7 +41,7 @@ const aboutLoad = () => {
   Alchemy:</b> Our chefs are alchemists, transforming humble seafood into culinary 
   magic. Try our kelp-infused butter or the swordfish pastrami—it’s like tasting 
   the briny kiss of Poseidon himself. <br><br><b>Tidepool Fusion:</b> Our menu transcends 
-  borders. Picture a fusion of Japanese umami, Mediterranean zest, and Pacific Northwest 
+  borders. Picture a fusion of Japanese umami, Mediterranean zest, and North Atlantic 
   flair.<br><br>Whether you’re a seasoned sailor or a landlubber seeking adventure, 
   Blobfish Bistro invites you to savor the sea’s secrets. Come, raise a glass of 
   seaweed-infused gin, listen to the haunting shanties of our resident accordionist, 
