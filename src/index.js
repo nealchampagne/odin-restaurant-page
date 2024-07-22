@@ -5,16 +5,16 @@ import './style.css';
 
 homeLoad();
 
-const homeBtn = document.querySelector('.home');
-const menuBtn = document.querySelector('.menu');
-const aboutBtn = document.querySelector('.about');
+const homeBtn = document.getElementById('home');
+const menuBtn = document.getElementById('menu');
+const aboutBtn = document.getElementById('about');
 
-const tabSwitch = (loadPage) => {
+const tabSwitch = (pageFunc) => {
   const content = document.getElementById('content');
   while (content.firstChild) {
   content.removeChild(content.lastChild);
   }
-  loadPage();
+  pageFunc();
 };
 
 homeBtn.addEventListener('click', () => {

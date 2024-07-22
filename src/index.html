@@ -6,13 +6,30 @@
   <title>Restaurant Page</title>
 </head>
 <body>
-  <header>
+  <header class="sidebar">
     <nav>
-      <button class="home">Home</button>
-      <button class="menu">Menu</button>
-      <button class="about">About</button>
+      <div class="tabcontainer">
+        <p>home</p>
+        <button id="home">Home</button>
+      </div>
+      <div class="tabcontainer">
+        <p>restaurant_menu</p>
+        <button id="menu">Menu</button>
+      </div>
+      <div class="tabcontainer">
+        <p>info</p>
+        <button id="about">About</button>
+      </div>
     </nav>
   </header>
-  <div id="content"></div>
+  <div class="main">
+    <div class="banner">
+      <div class="title">Blobfish Bistro</div>
+    </div>
+    <div id="content"></div>
+    <div class="footcontainer">
+      <div class="footer">Est. 1961</div>
+    </div>
+  </div>
 </body>
 </html>
