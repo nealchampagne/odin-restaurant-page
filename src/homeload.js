@@ -1,5 +1,7 @@
 import restaurant from './images/restaurant.jpeg';
 
+/** Function that generates home page content and adds it to the DOM */
+
 const homeLoad = () => {
   const content = document.querySelector('#content');
   const container = document.createElement('div');

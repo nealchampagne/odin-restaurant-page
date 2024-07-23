@@ -1,4 +1,8 @@
+/** Import JSON menu data */
+
 import menuJson from './menu.js';
+
+/** Function that generates menu page content and adds it to the DOM */
 
 const menuLoad = () => {
   const content = document.getElementById('content');
@@ -13,6 +17,9 @@ const menuLoad = () => {
 
   menuContainer.appendChild(title);
   
+  /** Generate menu items iteratively using a JSON object and append
+    * them to the menu page */
+
   const populateMenu = obj => {
     Object.keys(obj).forEach(key => {
       if (typeof obj[key] === 'object') {

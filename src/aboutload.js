@@ -1,3 +1,5 @@
+/** Function that generates about page content and adds it to the DOM */
+
 const aboutLoad = () => {
   const content = document.getElementById('content');
   const container = document.createElement('div');
